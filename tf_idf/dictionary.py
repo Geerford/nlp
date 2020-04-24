@@ -1,17 +1,15 @@
 import text_mining.tokenization.tokenizer as tk
 import text_mining.tf_idf.lemmatizer as lm
 import text_mining.tf_idf.tf_idf as tf
+import text_mining.helpers.helpers as hp
 
 
 def _get_word_tfidf_series(_word, _df):
     return _df[_word]
 
 
-def _analyse_corpus(_group_name):
-    corpus = []
-    for i in range(1, 10):
-        with open('docs/{}{}.txt'.format(_group_name, i), encoding='utf-8') as f:
-            corpus.append(f.read().rstrip())
+def _analyse_corpus(_group_name, n):
+    corpus = hp.get_corpus(_group_name, n)
     corpus = [[lm.lemmatize_sentence(sentence) for sentence in tk.custom_sentence_tokenize(doc)] for doc in corpus]
     print('Lemmatized corpus: \n{}'.format(corpus))
     df = tf.get_custom_dataframe_tf_idf(corpus)
@@ -72,8 +70,8 @@ text_rus = 'Прежде область обитания домового вор
 # corpus_test = [text_eng, text_eng1]
 # print(corpus_test)
 
-df1 = _analyse_corpus('python')
-df2 = _analyse_corpus('national_geographic')
+df1 = _analyse_corpus('python', n=10)
+df2 = _analyse_corpus('national_geographic', n=10)
 # _analyse_corpus('simple_text')
 
 # Compare dictionaries

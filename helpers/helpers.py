@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.cluster.hierarchy import dendrogram
 from nltk.corpus import wordnet as wn
 
 
@@ -74,3 +77,32 @@ def tag_map(_tag):
         return wn.ADV
     else:
         return wn.NOUN
+
+
+def plot_dendrogram(linkages, title, words):
+    template_title = 'Hierarchical Clustering Dendrogram - {}'
+    titles = []
+    if isinstance(linkages, list):
+        for i in range(len(linkages)):
+            titles.append(template_title.format(title[i]))
+            dendrogram(linkages[i],
+                       labels=np.array(words),
+                       orientation="right",
+                       leaf_font_size=8)
+            plt.title(titles[i])
+            plt.show()
+    else:
+        titles.append(template_title.format(title))
+        dendrogram(linkages,
+                   labels=np.array(words),
+                   orientation="right",
+                   leaf_font_size=8)
+        plt.title(titles)
+        plt.show()
+
+def get_corpus(_group_name, n):
+    corpus = []
+    for i in range(1, n + 1):
+        with open('docs/{}{}.txt'.format(_group_name, i), encoding='utf-8') as f:
+            corpus.append(f.read().rstrip())
+    return corpus
