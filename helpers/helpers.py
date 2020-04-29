@@ -100,6 +100,7 @@ def plot_dendrogram(linkages, title, words):
         plt.title(titles)
         plt.show()
 
+
 def get_corpus(_group_name, n):
     corpus = []
     for i in range(1, n + 1):
