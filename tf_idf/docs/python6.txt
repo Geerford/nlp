@@ -1,0 +1,52 @@
+Overview
+
+One of the most important parts of any Data Science/ML project is model validation. It is as important as any of your previous work up to that point. It is that one last hurdle before the Hurrah!
+
+For regression, there are numerous methods to evaluate the goodness of your fit i.e. how well the model fits the data. R² values are just one such measure. But they are not always the best at making us feel confident about our model.
+Image from Unsplash
+
+    To Err is Human, To Err Randomly is Statistically Divine
+
+And that is where Residual plots come in. Let’s talk about what Residual plots are and how you can analyze them to interpret your results.
+Residuals
+
+A residual is a measure of how far away a point is vertically from the regression line. Simply, it is the error between a predicted value and the observed actual value.
+Residual Equation
+
+Figure 1 is an example of how to visualize residuals against the line of best fit. The vertical lines are the residuals.
+
+
+Residual Plots
+
+A typical residual plot has the residual values on the Y-axis and the independent variable on the x-axis. Figure 2 below is a good example of how a typical residual plot looks like.
+
+Residual Plot Analysis
+
+The most important assumption of a linear regression model is that the errors are independent and normally distributed.
+
+Let’s examine what this assumption means.
+
+Every regression model inherently has some degree of error since you can never predict something 100% accurately. More importantly, randomness and unpredictability are always a part of the regression model. Hence, a regression model can be explained as:
+
+The deterministic part of the model is what we try to capture using the regression model. Ideally, our linear equation model should accurately capture the predictive information. Essentially, what this means is that if we capture all of the predictive information, all that is left behind (residuals) should be completely random & unpredictable i.e stochastic. Hence, we want our residuals to follow a normal distribution. And that is exactly what we look for in a residual plot. So what are the characteristics of a good & bad residual plot?
+
+Characteristics of Good Residual Plots
+
+A few characteristics of a good residual plot are as follows:
+
+    It has a high density of points close to the origin and a low density of points away from the origin
+    It is symmetric about the origin
+
+To explain why Fig. 3 is a good residual plot based on the characteristics above, we project all the residuals onto the y-axis. As seen in Figure 3b, we end up with a normally distributed curve; satisfying the assumption of the normality of the residuals.
+
+Finally, one other reason this is a good residual plot is, that independent of the value of an independent variable (x-axis), the residual errors are approximately distributed in the same manner. In other words, we do not see any patterns in the value of the residuals as we move along the x-axis.
+
+Hence, this satisfies our earlier assumption that regression model residuals are independent and normally distributed.
+
+Using the characteristics described above, we can see why Figure 4 is a bad residual plot. This plot has high density far away from the origin and low density close to the origin. Also, when we project the residuals on the y-axis, we can see the distribution curve is not normal.
+
+It is important to understand here that these plots signify that we have not completely captured the predictive information of the data in our model, which is why it is “seeping” into our residuals. A good model should always only have random error left after using the predictive information (Think back about Deterministic & Stochastic components)
+
+Summary
+
+To validate your regression models, you must use residual plots to visually confirm the validity of your model. It can be slightly complicated to plot all residual values across all independent variables, in which case you can either generate separate plots or use other validation statistics such as adjusted R² or MAPE scores.

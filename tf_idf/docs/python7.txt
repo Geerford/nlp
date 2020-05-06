@@ -1,0 +1,44 @@
+What Are Decision Trees?
+
+Let’s imagine we have a set of longitude and latitude coordinates corresponding to two types of areas: vegetation and non-vegetation. We can build a logistic regression model that is able to classify any coordinates as vegetation or non-vegetation. Logistic regression for classification works best when the classes are well separated in the feature space as depicted below.
+source: lecture notes, prof. P. Protopapas, Harvard University
+
+Now, let’s imagine a situation where vegetation is spread across several regions. It is now less straightforward to interpret nonlinear decision boundaries as illustrated in the picture below.
+source: lecture notes, prof. P. Protopapas, Harvard University
+
+It turns out that a simple flow charts can be formulated as mathematical models for classification in such cases. And they have the advantage to be interpretable by a human. We illustrate how these decision trees work with a simple example where a fruit should be recognized as lemon or orange.
+source: lecture notes, prof. P. Protopapas, Harvard University
+How to Train Decision Trees?
+
+Learning the smallest decision tree for any given set of training data is a difficult task. In each node, we need to choose the optimal predictor on which to split and to choose the optimal threshold value for splitting. In the previous example, we first decide by looking at the fruit’s width and using the threshold 6.5cm. We could have also started with fruit’s height or by choosing a different threshold value for the width. Our choice has an impact on the shape of regions of the tree.
+
+Ideally, the regions should grow progressively more pure with the number of splits. Each region should specialize towards a single class (lemon or orange). It is common to assess the quality of this split by measuring the Classification Error. The purity of the region can also be evaluated using the so-called Gini Index. Alternatively, the Entropy of the region can tell the level of impurity.
+What is Bias-Variance Trade-off?
+
+During training, the tree will continue to grow until each region contains exactly one training point (100% training accuracy). This results in a full classification tree which splits the training data until each leave contains a single observation. In order words, the full tree would over-fit to training data.
+Over-fitting
+
+An over-fitted tree would achieve a perfect classification of the training observations and the bias (error) would be 0. However, such a tree would be very sensitive because little changes of training observations would cause the predicted classes to change largely, this means the model variance would be very high. The model would not generalize well on unseen data.
+Trade-off
+
+In order to prevent over-fitting from happening, we need to define a stopping condition. A tree of low depth is unable to capture the nonlinear boundary separating the classes. By reducing the tree depth, we increase the biais (missclassification error on training) but we also reduce the variance. Bias-variance trade-off seeks a compromise between bias and variance, here using cross-validation.
+What is Cross-Validation?
+
+The appropriate depth can be determined by evaluating the tree on a held-out data set via cross-validation. By re-sampling the data many times, splitting the into training and validation folds, fitting trees with different sizes on the training folds and looking at the classification accuracy on the validation folds, we are able to find the tree depth, which gives the best bias-variance trade-off. Such a tree does not predict perfectly on the training set (acceptable bias) but its performance will be approximately the same if we change the training set a bit (acceptable variance).
+source — Scikit-learn.org
+Finding Optimal Depth via K-fold Cross-Validation
+
+The trick is to choose a range of tree depths to evaluate and to plot the estimated performance +/- 2 standard deviations for each depth using K-fold cross validation. We provide a Python code that can be used in any situation, where you want to tune your decision tree given a predictor tensor X and labels Y. The code includes the training set performance in the plot, while scaling the y-axis to focus on the cross-validation performance.
+
+The method selects tree depth 5 because it achieves the best average accuracy on training data using cross-validation folds with size 5. The lower bound of the confidence interval of the accuracy is high enough to make this value significant. When more nodes are added to the tree, it is clear that the cross-validation accuracy changes towards zero.
+
+The tree of depth 20 achieves perfect accuracy (100%) on the training set, this means that each leaf of the tree contains exactly one sample and the class of that sample will be the prediction. Depth-20 tree is overfitting to the training set.
+
+The tree depth 5 we chose via cross-validation helps us avoiding overfitting and gives a better chance to reproduce the accuracy and generalize the model on test data as presented below.
+Conclusion
+
+The idea in this article is that you use K-fold cross-validation with a search algorithm. The input for search is a hyperparameter grid, which are parameters that are selected before training the model. In our case, this is a simple range of potential tree depths.
+
+We provided easy-to-replicate Python code that can be applied not only for tuning a decision tree, but for general model selection tasks. Other approaches include nested cross-validation.
+
+Thanks to Anne Bonner and Amber Teng from Towards Data Science for editorial comments.

@@ -1,0 +1,42 @@
+It is common for data scientists to look down on Microsoft Excel. Compared to a programming language like Python, it seems like a tool from the stone age. It doesn’t scale well, it's hard to reproduce results, and once you start writing VBA macros, you might as well be using Python.
+
+Given all that, though, Excel has survived. I can’t even think of a business that doesn’t use some type of spreadsheet software to help analyze data. As Joe Reis said:
+
+    Excel is also still the mainstay of the business world. After WW3, cockroaches and Excel will survive.
+
+A Survivor
+
+You might be wondering, why has Excel survived in a world of big data and sexy tools such as Spark and Snowflake? How is it possible that the humble spreadsheet has not been completely disrupted?
+
+I believe it is because Excel is one of the most user-friendly ways to view and analyze data. Excel is a What You See Is What You Get (WYSIWYG) type of product. You enter Excel with a tabular view of your data and you can start editing, adding formulas, and creating pivot tables to your heart’s content. As you make these changes, what you see automatically updates. This is incredibly powerful and it makes Excel much more approachable.
+
+Also, Excel makes it very easy and intuitive to do basic analyses. Want to take the average of a column? Just use the AVERAGE formula. Want a scatter plot of your data? Just highlight your data, and click “scatter plot”. This ease of use is an incredible benefit. One that allows companies to leverage non-programmers to analyze and visualize data. In my opinion, Excel is one of the best tools in existence to help a company have a data-driven culture.
+Source
+Should Data Scientists Use Excel?
+
+I think everyone can agree with the above points. Excel is a useful tool to help people easily and intuitively do basic data processing and analytics.
+
+But — should it be a tool for data scientists?
+
+Or — are we too advanced? Too sophisticated for the likes of Excel? Should all problems be run through Python or R?
+
+I would argue that every data scientist should have basic comfort with Excel and feel no shame in using it as a tool.
+
+I mention shame because I find it all too easy for data scientists to hate Excel. It definitely isn’t a tool for every problem. Probably not even most data science problems. But that doesn’t mean it doesn’t have its place. I’ve found Excel to be very useful in the following situations:
+
+    I have a small amount of tabular data for which I want to do a few quick calculations. For example, maybe you have the views for a few hundred YouTube videos in a spreadsheet. It is much easier and faster to just open it up and calculate some basic statistics.
+    I need to share results with non-data scientists while still making it easy for them to do some of their own analyses.
+    I want to do some very fast charting of clean tabular data.
+
+Note: In all of the above examples, these would be ad-hoc requests which were not expected to be repeated. Once you start having to create a repeatable process, I would move to a programming language even if the analytics are simple. Doing so will make it much easier to reproduce and scale your analytics process if necessary. Reproducibility and scaling are two of the major downfalls of Excel.
+Go and Learn
+
+Hopefully, this short article has convinced you that Excel has a place in your data science toolbox. If you have not done much with Excel, I would urge you to go open up a CSV in Excel and explore the functionality. It is pretty easy to get started.
+
+If you’d like some help on getting started, Microsoft has some pretty nice, free tutorials.
+
+Lastly, also remember that Excel is not a good tool for many data science projects. If you find yourself with larger datasets, more advanced analytics/machine learning needs, or need to create a reproducible process, don’t use Excel. Go back to your programming language of choice.
+
+If you need a resource to help get you started in Python with analytics and visualization, you can check out a course I created to do just that.
+
+Now — go and add another tool to your data science toolbox (if you haven’t already)!

@@ -1,0 +1,57 @@
+Encoding categorical variables is a required preprocessing step in every machine learning project. Select the right technique of encoding is a serious and important task. Numerous are the choices available: from the classical one-hot or integer mapping to the clever target encoding or hashing function and finally arriving at the more complex vector representation.
+
+A fixed receipt doesn’t exist, the adoption of one technique instead of another is based on the kind of data at our disposal and the scope of our analysis. For example, one-hot preserve the symmetry of categories but it’s memory consuming. The integer mapping is more light but creates nonsense relations between classes. Target encoding correlated directly with the target but tends to overfit if not properly applied. Embedding representations are a new trend and consist of allocating a neural network to produce a sensate vector representation of categories.
+
+In this post, I deal with a problem of click fraud identification. The domain of our analysis is mobile devices with only categorical variables at our disposal. Our scope is to extract value from this data structure introducing some advanced vectorization techniques for categorical encoding. Three different approaches are shared: the first two manage the data applying a manual creation of vector features with group counting and other transformation; the latest is a pure neural network structure built to create a deep representation of categories, in a way that it tends to squeeze data extracting values from ‘groups’ (for this reason the name Group2Vec).
+THE DATA
+
+TalkingData AdTracking Fraud Detection was a challenge hosted by Kaggle for TalkingData, China’s largest independent big data service platform, that covers over 70% of active mobile devices nationwide. They handle 3 billion clicks per day, of which 90% are potentially fraudulent. Their current approach to prevent click fraud for app developers is to measure the journey of a user’s click across their portfolio, and flag IP addresses who produce lots of clicks, but never end up installing apps. With this information, they’ve built an IP blacklist and device blacklist. They required to build an algorithm that predicts whether a user will download an app after clicking a mobile app ad. For this purpose, they provided a generous dataset covering approximately 200 million clicks over 4 days!
+
+The information available is in the form of click records, with the following structure: ip, app, device, os, channel, click time, attributed time, is attributed (our target). Read and use all the monster quantity of data is out of our purpose. We extract 3 temporal samples: the first one (200.000 clicks) for train and other 2 (each of 50.000 clicks) for validation and test; we provide also a temporal drop between validation and test to grant more reliability in the results.
+Label distribution in function of time in the trainset
+
+The valuable variables at our disposal are ip, app, device, os, channel; all in a categorical format. The great amount of classes for each feature is a positive aspect that we want to valorize. In this sense, the classical approaches of encoding don’t give their best, we need more and for this reason, we build some special and interesting. Grouping and Count are two magical ingredients to develop our advance techniques of encoding, they are introduced since the first steps of our manual feature engineering process. In the end, we try to do without manual engineering and create a neural network structure clever enough to produce a valuable and comparable result, but let’s proceed with order!
+Group Count + Truncated SVD
+
+The first technique we introduced, makes use of Truncated SVD (LSA), also LDA or similars are good candidates. As underlined before, our scope is to encode our categorical columns producing a vector representation of each class inside them. Here the schematized procedure:
+
+    groupby the train by each categorical variable (group_key);
+    for every remaining categorical variable in turn (passive_key), we compute a join of the available classes group-wise, like they were strings. Each couple group_key — passive_key is a string of classes coming from the passive_key domain;
+    the strings are retrieved to numbers encoding them with a CountVectorizer;
+    the resulting sparse matrixes are then reduced with the Truncated SVD.
+
+In this way, we obtain vector representations for each class of each categorical variable as the concatenation of Truncated SVD vectors. The lengths of vectors depend on the number of reduced components and on the number of concatenations, derived by all the possible combinations (n_comp*n_cat*(n_cat-1)). In our case, with 3 as the number of reduced components, each class in each variable is a vector of length 60 (3*5*5(5–1)). For clarification, the class of categories that don’t appear in the trainset, or NaN’s, are in the earlier encoded as 0.
+
+The features created are useful for every kind of further task. We use them to feed a model for click fraudulent predictions. With a simple RandomForest, tuned on the validation, we reach 0.908 AUC on unseen test data.
+TNSE on data features (from left: app, ip, channel)
+Group Count + Entropy
+
+This second technique imposes, as above, the manual formation of groups as a way to transform raw categoricals into numbers. Here the schematized procedure:
+
+    groupby the train by each categorical variable (group_key);
+    for every remaining categorical variable in turn (passive_key), compute the unstacked count matrix. Where on the first dimension we have the group_key classes while on the second dimension we have the passive_key classes. The intersection is the group-wise counting frequencies;
+    apply entropy on the rows to summarize the counting occurrences.
+
+In this way, we obtain vector representations for each class of each categorical variable as the concatenation of entropy values. Since the entropy is a single scalar value, the lengths of the vector representations depend on the number of concatenations, derived by all the possible combinations applicable (n_cat*(n_cat-1)). In our case 20 (5*5(5–1)).
+
+As below, we used the generated set of features to feed a machine learning model that predicts which clicks are fraudulent. With a simple RandomForest, tuned on the validation, we reach 0.896 of AUC on unseen test data.
+TNSE on validation data (from left: app, ip, channel)
+Group2Vec
+
+In this section, we introduce an automatic technique that tries to make all the previous handmade feature engineering for us. The magic is possible due to the power of neural networks and deep learning. The architecture for this task is called Group2Vec (below a schematic visualization).
+Group2Vec architecture
+
+It receives as input the tabular categorical features and tries to learn a valuable embedding representation of them, in a supervised way. This problem is not new for neural networks: the most simple models learn an embedding representation of categorical data training embedding layers and in the end, concatenating all of them before the output. Our strategy is at the same time simple and more effective:
+
+    Initialize embedding layers for each categorical input;
+    For each category, compute dot-products among other embedding representations. These are our ‘groups’ at the categorical level;
+    Summarize each ‘group’ adopting an average pooling;
+    Concatenate ‘group’ averages;
+    Apply regularization techniques such as BatchNormalization or Dropout;
+    Output probabilities.
+
+Group2Vec trained on our specific task achieved 0.937 of AUC on test data.
+TNSE on validation data (from left: app, ip, channel)
+SUMMARY
+
+In this post, I’ve introduced some advanced techniques for categorical encoding. They differ from the standard approaches available everywhere, showing at the same time great predictive power if adopted in a classification task. Their usefulness is clear in cases of categorical features with a high number of classes, avoiding at the same time dimensionality and representative problems.

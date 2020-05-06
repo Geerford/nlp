@@ -1,0 +1,88 @@
+Machine learning is the process of using features to predict an outcome measure. Machine learning plays an important role in many industries. A few examples include using machine learning for medical diagnoses, predicting stock prices, and ad promotion optimization.
+
+Machine learning employs methods of statistics, data mining, engineering, and many other disciplines. In machine learning, we use a training set of data, in which we observe past outcome and feature measurements, to build a model for prediction. We can subsequently use this model to predict outcome measurements of future events. This is method is called supervised machine learning. Here are a few more use cases of machine learning:
+
+    Predict Forest Fire Burn Area
+    Identify Objects in Images
+    Predict Medical Costs
+
+Before we move forward let’s briefly go over some terminology. Let’s distinguish between supervised and unsupervised machine learning.
+Supervised Machine Learning
+
+Supervised learning is the task of learning a function that maps feature measurements to outcome measures based on past examples of feature-outcome pairs. In supervised machine learning, the measurement outputs can vary in nature depending on the example. There are quantitative measurement outcomes, for which we use regression models and qualitative measurement outcomes for which we use classification models.
+Unsupervised Machine Learning
+
+Another type of machine learning is unsupervised learning, where we only observe feature measurements and no outcomes. Unsupervised learning is the task of finding undetected patterns with no pre-existing measurement outcomes.
+Quantitative and Qualitative Outcomes in Supervised Learning
+
+Quantitative Measurement Outcomes (Regression)
+
+In predicting the burn area of forest fires, for example, the output is a quantitative measurement. You can have large burn areas, small burn areas, and a range of values in between. Similarly, in the predicting medical costs example, you can have large and small medical expenses and examples in between. In general, outcome measurements close in value have a similar nature (similar features/input).
+
+Qualitative Measurement Outcomes (Classification)
+
+Qualitative variables are categorical or discrete variables that are either descriptive labels or ordered categorical values. In the image classification example, the image labels are simply descriptions of what the image contains (ie: building, airplane, … etc). Qualitative variables are typically represented by numerical codes. For example, if you are classifying images of cats and dogs, cat can be encoded with a “0” and dogs can be encoded with a “1” (because dogs are better).
+
+For the remainder of this post, I will walk through the three machine learning use cases listed above. I will develop a baseline model, implemented in python, to demonstrate supervised learning for both regression and classification.
+
+Let’s get started!
+Predict Forest Fire Burn Area
+
+The data for this example contains 517 fires from the Montesinho natural park in Portugal. The data contains the burn area and corresponding incident weekday, month, and coordinates. It also contains meteorological information such as rain, temperature, humidity, and wind. The goal is to predict the burn area from a number of measurements including spatial, temporal, and weather variables. This example is a supervised learning regression problem, since the outcome measurement is quantitative. The data can be found here.
+
+To begin, let’s import Pandas. Pandas is a python library used for a variety of tasks, including data reading, statistical analysis, data aggregation and much more. We will use Pandas to read our data into what is called a data frame. A data frame is a two-dimensional data structure with labelled columns. Data frames are very similar to Excel spreadsheets.
+
+Let’s read in our data using Pandas:
+
+Let’s print the first five rows of data:
+
+Let’s use a random forest model for our predictions. Random forests use an ensemble of uncorrelated decision trees. Decision trees are flow charts containing yes or no questions and answers about the features in our data. For a good introduction to random forests, I recommend you read Understanding Random Forest.
+
+For our model, we will use ‘month’, ‘temp’, ‘wind’, and ‘rain’ to predict burn area. Let’s convert the month into a numerical value that we can use as input:
+Now let’s define our random forest object and fit our model to our training data. Here we will use 100 estimators (number of decision trees) and a max depth of 100 (number of questions to ask):
+We can evaluate the performance of our model by running the train/test split and prediction calculation 1000 times and taking the average across all runs:
+Now, let’s move on to another machine learning use case: image classification.
+Identify Objects in Images
+
+In this example, we will be building a classification model using data which comes from the Intel Image Classification challenge. It contains 25k images of forests, the sea, buildings, glaciers, mountains and streets. The data can be found here.
+
+We will be using a convolutional neural network (CNN) to classify the objects in the image data. CNNs are a class of deep neural networks most frequently applied to computer vision. CNNs find low level features of images like edges and curves and build up to more general concepts through a series of convolutions.
+
+The constituents of a CNN are the following layers:
+
+Convolution layer: A filter scans a few pixels at a time. From these pixels, features are generated and used to predict the class to which each feature belongs.
+
+Pooling Layer: This layer down samples the amount of information in each feature that is output by the convolutional layer while preserving the most important information.
+
+Flatten Layer: This layer takes the output from the previous layers and turns them into a single vector that will be used for input.
+
+Fully Connect Layer: This layer applies weights to the resulting features.
+
+Output Layer: The final layer gives the class prediction.
+
+CNNs are loosely inspired by the visual cortex, where small regions of cells are sensitive to specific regions in visual fields. As a result, neurons fire in the presence of edges in specific orientations, which collectively produce visual perception. For a more thorough discussion of CNNs consider reading A beginner’s Guide to Understanding Convolutional Neural Networks. The article, Fully Connected Layers in Convolutional Neural Networks: The Complete Guide, is another useful resource if you want to further understand CNNs.
+
+Now let’s build our image classification model. The code in this post is inspired by the Kaggle kernel: Intel Image Classification (CNN — Keras).
+
+To begin, let’s import the necessary packages:
+Next, let’s define a function that will load our data:
+We then compile our model. We use sparse categorical cross entropy, or log loss, as our loss function. This metric is typically used to measure the performance of classification models:
+Our model does a decent job predicting streets and forests but leaves much to be desired for the other categories. Feel free to perform further hyper-parameter tuning (experimenting with number of layers, neurons, epochs and batch size) to further decrease the classification error rate.
+
+You can also try applying this to other image classification problems. You can find a few here.
+
+Now let’s move on the the final machine learning use case: Predicting medical costs.
+Predict Medical Costs
+
+The data we will be using is simulated insurance cost data from Brett Lantz’s introduction to machine learning book, Machine Learning with R. The data contains the age of primary insurance holders, sex, body mass index, number of children, smoking status, the beneficiary’s residential area, and the individual medical costs billed by health insurance. The data can be found here.
+
+Let’s import Pandas and read the data into a pandas data frame:
+As we can see this is a pretty simple data set. In this example, we will be using age, sex, BMI, parental status, smoker status, and geographic region to predict medical costs.
+
+For this example, we will build a k-nearest neighbors regression model to predict medical costs. While we will be using k-nearest neighbors for regression, it can also be used for classification. In both cases, it uses Euclidean distance calculations to predict the outcome measure of the k nearest neighbors.
+
+To proceed, let’s convert the categorical columns into numerical values we can use as input to our model:
+I’ll stop here, but feel free to tune the k-nearest neighbors algorithm by playing with the number of neighbors. In general, the k-nearest neighbors algorithm is better suited for anomaly detection problems. You can check out a few examples of these problems here.
+Conclusions
+
+To summarize, in this post we discussed machine learning and three relevant use cases that employ machine learning and statistical methods. We briefly discussed the difference between supervised and unsupervised learning. We also made a distinction between regression and classification models with examples of both problem types. I encourage you to apply these methods to other interesting use cases. For example, you can use CNNs to detect breast cancer in X-ray images (data can be found here) or you can use K-nearest neighbors to detect credit card fraud (data can be found here). I hope you found this post interesting/useful. Please leave a comment if you have any questions. The code from this post is available on GitHub. Good luck and happy machine learning!

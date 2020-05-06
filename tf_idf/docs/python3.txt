@@ -1,0 +1,42 @@
+The ResNet architecture, proposed by Kaiming He et al. in 2016, has been proven to be one of the most successful neural network architectures in the field of computer vision. Almost three years later, a team led by Tong He of Amazon Web Services, suggested a few tweaks in the structure of the model that can have a non-negligible effect on the model accuracy.
+In this story, we implement the ResNet architecture from scratch, taking into account the tweaks introduced in the “Bag of Tricks for Image Classification with Convolutional Neural Networks” publication. The resulting model, following Jeremy Howard’s recommendation, is called xResNet and we can either think of it as the mutant ResNet or the architecture’s neXt version.
+Attribution
+The code is, for the most part, taken from the fast.ai course and the fast.ai library. However, I try to simplify it and structure it in a way that supports the narrative.
+ResNet Architecture
+To better understand the reasoning behind the tweaks introduced in xResNet, we briefly discuss the original ResNet architecture. The general view of the model is depicted in the figure below.
+At first, we have the input stem. This module consists of a 7x7 convolution layer with a 64 output channel and a stride of 2. This is followed by a 3x3 max-pooling layer, again with a stride of 2. We know that the output size of an image after a convolution is given by the following formula below.
+In this formula o is the output size of the image (o x o), n is the input size (n x n), p is the padding applied, f is the filter or kernel size and s is the stride. Thus, the input stem reduces the width and height of the image by 4 times, 2 coming from the convolution and 2 from the max pooling. It also increases its channel size to 64.
+Later, starting from Stage 2, every module starts with a downsampling block followed by two residual blocks. The downsampling block is divided into two paths: A and B. The path A has three convolutions; two 1x1 and in the middle a 3x3. The first convolution has a stride of 2 to halve the image size and the last convolution has an output channel that is four times larger than the previous two. The role of path B is to bring the input image to a shape that matches the output of path A so that we can sum the two results. Thus, it only has a 1x1 convolution with a stride of 2 and the same number of channels as the last convolution of Path A.
+The residual block is similar to the downsampling one, but instead of throwing a stride 2 convolution, in the first layer of each stage, it keeps the stride equal to 1 the whole time. Altering the number of residual blocks in each stage gives you back different ResNet models, such as ResNet-50 or ResNet-152.
+xResNet Tweaks
+
+There are three different tweaks in the ResNet architecture to obtain the xResNet model; ResNet-B, ResNet-C and ResNet-D.
+
+ResNet-B, which first appeared in a Torch implementation of ResNet, alters the path A of the downsampling block. It simply moves the stride 2 to the second convolution and keeps a stride of 1 for the first layer. It’s easy to see that if we have the stride 2 in the first convolution, which is a 1x1 convolution, we lose three-quarters of the input feature map. Moving it to the second layer alleviates this problem and does not alter the output shape of path A.
+
+ResNet-C, proposed in Inception-v2, removes the 7x7 convolution in the input stem of the network and replaces it with three consecutive 3x3 convolutions. The first one has a stride of two and the last one has a 64 channel output followed by a 3x3 max-pooling layer with stride 2. The resulting shape is the same but the 3x3 convolutions are now much more efficient than a 7x7 one, because a 7x7 convolution is 5.4 times more expensive than a 3x3.
+
+ResNet-D is the new suggestion and is a logical consequence of ResNet-B. In path B of the downsampling block, we also have a 1x1 convolution of stride 2. We are still throwing three-quarters of useful information out of the window. Thus, the authors replaced this convolution with a 2x2 average-pooling layer of stride 2 followed by a 1x1 convolution layer. The three tweaks are summarised in the picture below.
+xResNet tweaked architecture
+Implementation
+
+In the last section of this story, we implement the xResNet architecture in Pytorch. First, let us import the torch library and define the conv helper function, which returns a 2D convolution layer.
+
+Now to complete the convolution block, we should add the initialization method, batch normalization and the activation function — if needed. We use the conv function defined above to create a complete block.
+
+We see that we want to initialize the weights of the batch normalization layer to either 1 or 0. This is something that we will come back to later. Next, we define the xResNet block.
+
+In the xResNet block, we have two paths. We call path A the convolution path and path B the identity path. The convolution path is divided into two different cases; for xResNet-34 and down, instead of having three convolutions in each stage we get just two 3x3 convolution layers.
+
+Moreover, in any xResNet architecture, we do not use an activation function to the final convolution layer of each block and initialize the batch normalization weights to 0. The second one is done to allow our network to easily learn the identity function effectively cancelling the whole block. That way we can design deeper network architectures, where the activations are carried further down the model, without worries of exploding or vanishing gradients.
+
+In path B, the identity path, we use the average-pooling of stride 2 and the 1x1 convolution if we have a downsampling block, otherwise we just let the signal flow through. Finally, for the activation function, we use the default ReLU activation.
+
+Putting it all together, we create the xResNet architecture, with the stem input and some helper methods to initialize the model.
+
+We are now ready to define the different variations of our model, xResNet-18, 34, 50, 101 and 152.
+Conclusion
+
+In this story, we briefly introduced the ResNet architecture, one of the most influential models in computer vision. We then went a bit further and explained some tricks that make the architecture more powerful by increasing its accuracy. Finally, we implemented the tweaked xResNet architecture in code, using PyTorch.
+
+In a later chapter, we will see how to use this model to solve a relevant problem with and without transfer learning.
