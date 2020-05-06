@@ -1,0 +1,26 @@
+Emerging-market currencies face further sell-downs of up to 30% if the spreading coronavirus outbreak causes U.S. stocks to slide as much as they did in the global financial crisis, an analysis by Bloomberg shows.
+
+The dollar may strengthen a further 30% against the Russian ruble and 23% versus the Chilean peso, according to the study that examines moves in developing-nation currencies to significant sell-downs in S&P 500 Index, and scales those to a 50% loss. In contrast, the U.S. currency is likely to gain only 1% against the Chinese yuan.
+EM currencies have suffered as U.S. stocks tumbled
+
+The analysis shows currencies from countries with current-account deficits and relatively illiquid financial markets are the most vulnerable to dollar strength. These include a number of nations in Latin America, along with South Africa, Indonesia, and India.
+
+By contrast, currencies from countries with large surpluses will outperform, namely Thailand and Taiwan. One outlier is the ruble. While Russia has a current-account surplus, its currency is set to face heavy losses due to the fact a slump in the global economy typically leads to a slide in oil prices.
+
+READ: Fed Cuts Rates to Near Zero as U.S. Economy Braces for Virus
+
+Turkey’s lira was found to have the biggest potential decline against the dollar among the 17 pairs included in the study, however the currency trades less freely than it used too after the authorities restricted access to swap transactions so losses may be more muted.
+
+The relentless spread of the coronavirus and a plunge in oil prices has already seen the S&P 500 Index tumble about 25% from its closing high on Feb. 19 to its low set last week. The dollar has jumped 20% versus the Chilean peso and 18% against the ruble during the same period.
+
+While there has already been something of a bloodbath across emerging-market currencies, there is scope for a lot more losses to come.
+
+    In the current shock, we compare FX moves since Jan. 20, the day before concerns about the virus grow in Asia, with moves in SPX since its Feb. 19 closing high to the point at which futures went limit down after the Fed cut rates on March 15
+    Average beta is derived from EM FX moves during the past 9 major draw-downs in the S&P 500 since 2000
+    Average of those SPX moves is scaled up to a predicted 32% further decline
+    Using USD-IDR as an example, the average historical beta is 7.2%. This is multiplied by 1.36x (32%/24%) to get 9.8%
+    Asian FX results are then adjusted for the change in the current account since the prior SPX sell-offs and for the difference in the current U.S. Dollar Real Exchange Rate from the average that prevailed ahead of those previous sell-offs
+    The adjustment factors come from a panel regression of all Asian FX reactions to SPX declines in the form: Asia FX Change = -0.42 (SPX change) + -0.00183 (U.S. Dollar index starting point) + -0.0027 (Current account/GDP), where all independent variables have a p-value of <10%. Although the same equation for the non-Asian EMs gives insignificant coefficients, the study makes some adjustment -- indeed, intuitively it should be larger.
+    In the case of Indonesia, the current account has deteriorated by -3% of GDP and the dollar is 7.6% above the average that prevailed prior to our historical sell-offs so we get: Asia FX Change = 9.8% + (3*-0.00270) + (6.3*-0.00183) = 9.4%
+    Turkey’s lira may move less than this due to trading restrictions imposed on swap transactions
+    NOTE: Simon Flint is an emerging-market strategist at Bloomberg News. The observations he makes are his own and not intended as investment advice

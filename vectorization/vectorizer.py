@@ -94,22 +94,65 @@ def draw(_wordsim_pairs, _ppmi_df, _word_context_df, _word_set):
 def compare_word(_ppmi_df, w1, w2):
     wordsim353 = pandas.read_csv('docs/wordsim353.csv')
     print('{} - {}'.format(w1, w2))
-    print(wordsim353[(wordsim353['Word 1'] == w1) & (wordsim353['Word 2'] == w2)])
-    print('Cosine: {}'.format(wm._get_cosine_similarity(_ppmi_df[w1], _ppmi_df[w2])))
-    print('Jaccard: {}'.format(wm._get_weighted_jaccard_similarity(_ppmi_df[w1], _ppmi_df[w2])))
-    print('Kullback-Leibler: {}'.format(wm._get_kullback_leibler_divergence(_ppmi_df[w1], _ppmi_df[w2], positive=False)))
-    print('Jensen-Shannon: {}'.format(wm._get_jensen_shannon_divergence(_ppmi_df[w1], _ppmi_df[w2], positive=True)))
+    wordsim = wordsim353[(wordsim353['Word 1'] == w1) & (wordsim353['Word 2'] == w2) |
+                         (wordsim353['Word 1'] == w2) & (wordsim353['Word 2'] == w1)]
+    print(wordsim)
+    cosine = wm._get_cosine_similarity(_ppmi_df[w1], _ppmi_df[w2])
+    print('Cosine: {}'.format(cosine))
+    jaccard = wm._get_weighted_jaccard_similarity(_ppmi_df[w1], _ppmi_df[w2])
+    print('Jaccard: {}'.format(jaccard))
+    kullback_leibler = wm._get_kullback_leibler_divergence(_ppmi_df[w1], _ppmi_df[w2], positive=False)
+    print('Kullback-Leibler: {}'.format(kullback_leibler))
+    jensen_shannon = wm._get_jensen_shannon_divergence(_ppmi_df[w1], _ppmi_df[w2], positive=True)
+    print('Jensen-Shannon: {}'.format(jensen_shannon))
+    result = {'wordsim353': wordsim.iloc[0]['Human (Mean)'], 'cosine': cosine, 'jaccard': jaccard, 'kullback_leibler': kullback_leibler,
+              'jensen_shannon': jensen_shannon}
+    return result
+
+
+def get_pearson_coef(_x, _y):
+    x_avg = sum(_x) / len(_x)
+    y_avg = sum(_y) / len(_y)
+    numerator, denominator_x, denominator_y = 0, 0, 0
+    for i in range(len(_x)):
+        numerator += (_x[i] - x_avg) * (_y[i] - y_avg)
+        denominator_x += (_x[i] - x_avg)**2
+        denominator_y += (_y[i] - y_avg)**2
+    return numerator / (denominator_x * denominator_y)**0.5
 
 
 def main():
-    corpus = hp.get_corpus('tiger', n=11)
-    corpus = [[lm.lemmatize_sentence(sentence) for sentence in tk.custom_sentence_tokenize(doc)] for doc in corpus]
-    word_set = _get_word_set(corpus)
-    word_context_df = _get_word_context_matrix(corpus, word_set)
-    ppmi_df = _get_pmi(word_context_df)
-    compare_word(ppmi_df, 'tiger', 'cat')
-    # wordsim_pairs = [('tiger', 'cat')]
-    # draw(wordsim_pairs, ppmi_df, word_context_df, word_set)
+    dict_files = {('bank', 'money'): 9, ('book', 'paper'): 8, ('coffee', 'cup'): 8, ('computer', 'internet'): 8,
+                  ('doctor', 'nurse'): 8, ('dollar', 'loss'): 8, ('football', 'soccer'): 8, ('phone', 'cell'): 8,
+                  ('software', 'computer'): 8, ('tiger', 'cat'): 11}
+    #dict_files = {('tiger', 'cat'): 11}
+    result = []
+    for group_names, count in dict_files.items():
+        first_word, second_word = group_names
+        corpus = hp.get_corpus(first_word, count)
+        corpus = [[lm.lemmatize_sentence(sentence) for sentence in tk.custom_sentence_tokenize(doc)] for doc in corpus]
+        word_set = _get_word_set(corpus)
+        word_context_df = _get_word_context_matrix(corpus, word_set)
+        ppmi_df = _get_pmi(word_context_df)
+        result.append(compare_word(ppmi_df, first_word, second_word))
+        # wordsim_pairs = [(first_word, second_word)]
+        # draw(wordsim_pairs, ppmi_df, word_context_df, word_set)
+
+    wordsim_values, cosine_values, jaccard_values, kullback_leibler_values, jensen_shannon_values = [], [], [], [], []
+
+    for dict_item in result:
+        wordsim_values.append(dict_item['wordsim353'])
+        cosine_values.append(dict_item['cosine'])
+        jaccard_values.append(dict_item['jaccard'])
+        kullback_leibler_values.append(dict_item['kullback_leibler'])
+        jensen_shannon_values.append(dict_item['jensen_shannon'])
+    print('###################')
+    print('Pearson coef (wordsim and cosine): {}'.format(get_pearson_coef(wordsim_values, cosine_values)))
+    print('Pearson coef (wordsim and jaccard_values): {}'.format(get_pearson_coef(wordsim_values, jaccard_values)))
+    print('Pearson coef (wordsim and kullback_leibler_values): {}'.format(get_pearson_coef(wordsim_values,
+                                                                                           kullback_leibler_values)))
+    print('Pearson coef (wordsim and jensen_shannon_values): {}'.format(get_pearson_coef(wordsim_values,
+                                                                                         jensen_shannon_values)))
 
 
 main()

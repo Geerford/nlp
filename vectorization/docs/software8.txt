@@ -1,0 +1,31 @@
+If you resort to deleting apps when your phone's storage space is full, researchers have a solution.
+
+New software "streams" data and code resources to an app from a cloud server when necessary, allowing the app to use only the space it needs on a phone at any given time.
+
+"It's like how Netflix movies aren't actually stored on a computer. They are streamed to you as you are watching them," said Saurabh Bagchi, a Purdue University professor of electrical and computer engineering, and computer science, and director of the Center for Resilient Infrastructures, Systems and Processes.
+
+"Here the application components, like heavy video or graphics or code paths, are streaming instantly despite the errors and slowdowns that are possible on a cellular network."
+
+Bagchi's team showed in a study how the software, called "AppStreamer," cuts down storage requirements by at least 85% for popular gaming apps on an Android.
+
+The software seamlessly shuffles data between an app and a cloud server without stalling the game. Most study participants didn't notice any differences in their gaming experience while the app used AppStreamer.
+
+Since AppStreamer works for these storage-hungry gaming apps, it could work for other apps that usually take up far less space, Bagchi said. The software also allows the app itself to download faster to a phone.
+
+The researchers will present their findings Feb. 18 at the 17th International Conference on Embedded Wireless Systems and Networks in Lyon, France. Conference organizers have selected this study as one of three top papers.
+
+AppStreamer is a type of software known as middleware, located between the apps on a device and the operating system.
+
+The middleware automatically predicts when to fetch data from a cloud server. AT&T Labs Research provided data from cellular networks for this study to help evaluate which bandwidths AppStreamer would use and how much energy it would consume.
+
+AppStreamer could help phones better accommodate 5G connectivity -- high-speed wireless cellular networks that would allow devices to download movies in seconds and handle other data-heavy tasks much faster than the 4G networks currently available to most phones.
+
+Using AppStreamer on a 5G network would mean that an app downloads instantly, runs faster and takes up minimal space on a phone.
+
+The researchers also designed AppStreamer to use "edge computing," which stores and sends data from edge servers. These servers, located in spots such as cellphone towers, are closer to a device compared to the cloud. The shorter distance reduces data download time.
+
+Bagchi's lab researches ways to make edge computing more reliable. Bagchi wrote on those challenges in an article recently published in Communications of the ACM.
+
+The researchers believe that AppStreamer could be good for more than just phones. In order for self-driving cars to respond to their surroundings more safely, they would need to reliably pull data from servers in milliseconds. Middleware such as AppStreamer could eventually supply this functionality through edge computing on a 5G network.
+
+This research was supported by AT&T and the National Science Foundation (grant numbers CNS-1409506 and CNS-1527262).

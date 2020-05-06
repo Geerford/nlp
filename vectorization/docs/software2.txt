@@ -1,0 +1,13 @@
+Cancers are often made up of many cells which vary genetically to each other. These genetic differences mean the cancer may be particularly susceptible or resistant to a given treatment. As a result, identifying these variations can help clinicians decide which treatment is most likely to be successful for a specific patient.
+
+Because simple clinical methods to test for genetic variation are vulnerable to missing a lot of cell-to-cell variability, recent computer tools have been developed to predict and characterise genetic diversity within clinical tumour samples. However, there is no existing common benchmarking approach to determine the most accurate computational methods.
+
+The study, published in Nature Biotechnology, developed open-source software that can be used to judge the accuracy of computer predictions and establish this benchmark.
+
+The team developed a simulation framework and scoring system to determine how accurately each algorithm predicted various measures of genetic diversity. These included: the proportion of cancerous cells in the tumour sample; the number of genetically different groups of cancerous cells in the tumour sample; the proportion of cells within each of these groups; which genetic mutations were in each group; and the genetic relationship between the groups.
+
+"Our new framework provides a foundation which, over time as it is run against more tumours, will hopefully become a much-needed, unbiased, gold-standard benchmarking tool for assessing models that aim to characterise a tumour's genetic diversity," says joint-lead author Maxime Tarabichi, postdoc in the Cancer Genomics Laboratory at the Crick.
+
+The researchers built upon an existing computer software to generate and analyse the 580 predictions in this research, adding new features to the software to create more realistic tumours. This tumour-simulation software and the marking framework are publicly available for other researchers to use either directly or to help develop their own scoring framework.
+
+"Computer simulations in cancer genomics are helping us develop more accurate tools, as we understand where these tools perform well, and where they need improvement," says author Peter Van Loo, group leader in the Cancer Genomics Laboratory at the Crick. "Further developing these tools, so they more closely match real-life tumours, should ultimately help clinicians better match patients with personalised medicines."

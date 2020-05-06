@@ -1,0 +1,11 @@
+
+Computer Software
+Origin Of Computer Software, Modern Day Computer Software, The Language Of Software, Application Software
+
+Computers are built of electronic components encased in a sturdy metal container and attached to the outside of the container. Examples of hardware include electrical connections, circuit boards, hard and disk drives, viewing monitor, and printer. The components and the container are referred to as hardware. On their own, computer hardware is functionally useless. For the electronic circuitry to be of use, commands must be supplied. Every task that a computer performs—from mathematical calculations, to the composition and manipulation of text, to modeling—requires instructions. These instructions are referred to as computer software.
+
+The software instructions tells a computer what to do and how to do it. It is the "brain" that tells the hardware or "body" of a computer what to do. The operation of the hardware depends upon the procedures in a software program. The software instructions can be under the commands of the person using the computer (i.e., spreadsheet or word processing programs). Or, software may run automatically in the background, without user intervention (i.e., virus monitoring programs).
+
+Computers must receive instructions to complete every task they perform. Some microcomputers, such as hand-held calculators, wristwatches, and automobile engines contain built-in operating instructions. These devices can be called "dedicated" computers. Personal computers found in businesses, homes, and schools, however, are general-purpose machines because they can be programmed to do many different types of jobs. They contain enough built-in programming to enable them to interpret and use commands provided by a wide range of external software packages which can be loaded into their memory.
+
+Computer software are a convenient collection of highly detailed and specific commands written by computer programmers and recorded on disks or tapes in a defined order. Once a software program has been loaded into the memory of a computer, the instructions remain until they are deliberately deleted or become corrupt in some accidental or malicious way. The instructions do not have to be entered by the user every time the computer is used.

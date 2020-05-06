@@ -1,0 +1,21 @@
+UBC computer scientists have turned Amazon Alexa into a tool for software engineers, tasking the virtual assistant to take care of mundane programming tasks, helping increase productivity and speed up workflow.
+
+Software engineers use many different tools for any one project. They work with millions of lines of computer code and run their code through various independent tools to help edit, build and test systems and for project management to get their programs running smoothly.
+
+"It can be quite complicated to switch between the different tools because they each use a unique syntax and you have to understand how to put them together," said Nick Bradley, who led this work during his master's research in computer science at UBC. "The idea to use Alexa came out of my frustration from using these different tools and having to spend so much time looking up how to do it and use those tools together."
+
+Bradley and computer science professors Reid Holmes and Thomas Fritz decided to test whether Amazon's virtual assistant could help with this process. They wanted software engineers to use simple, conversational language to ask Alexa to complete some of their tasks, the same way we ask it to give us the weather forecast or play our favourite songs.
+
+Researchers said it was more than just a matter of teaching Alexa some key phrases and mapping different commands to the work, they also had to figure out common multi-step tasks engineers were performing and build a system that could automate those tasks. They then asked 21 engineers from local Vancouver software companies to test out their system and evaluate it. While the engineers found the tool useful and provided lots of positive feedback, there was one challenge.
+
+"The biggest problem was using voice commands in an office environment -- they found it distracting to their neighbours," said Bradley.
+
+The computer scientists' next development will be to create a chat bot to fulfill a similar function so engineers can type minimal requests and have the system perform their multi-step tasks so they can focus on the more important parts of their jobs.
+
+Holmes says this research is part of a larger effort to understand how software engineers do their jobs.
+
+"The pace of change in the software field is so fast that engineers don't have time to be introspective and think about the way they work," he said. "Our job in academia is to step back and really think about how we can better support engineers to quickly and correctly build the kinds of software we depend upon in our modern society. Systems keep getting larger and more complex and using personal assistants could be one way to help developers be more effective within this fast-paced environment."
+
+The researchers also recognize that these virtual assistants could be programmed for a variety of occupations including medicine, law, or accounting.
+
+"You can imagine a situation where a lawyer is reading a legal brief and asks Alexa to find relevant cases on similar topics to help with research," said Holmes.

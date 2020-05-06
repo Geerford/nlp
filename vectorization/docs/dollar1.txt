@@ -1,0 +1,31 @@
+Can your company handle a 10 million dollar loss? Sonitrol case
+
+  Sonitrol's subscriber's warehouse was allegedly broken into; the burglars started a fire and the premises burned down.  The subscriber was covered by insurance; two carriers.  The two carrier's paid the loss and then sued Sonitrol alleging willful and wanton breach of contract.  A Colordado jury awarded in excess of 10 million dollars and the Court has affirmed the award. 
+
+    According to a news article here is the basis of the willful and wanton conduct [which is another way of saying gross negligence]:
+
+    "The alarm system was having a number of false activations starting in the years right before the fire. The warehouse was equipped with several microphones that were supposed to send an alert and connect the alarm company to the warehouse when noise 75 decibels over ambient sound was detected. The alarm company would then be able to hear remotely what was happening in the warehouse, Dunford said.
+
+    A technician was twice sent out to the warehouse to make the microphones less sensitive to noise after the false activations. Dunford said he argued these changes "essentially disabled" the system. He had one of the burglars who had since been released from jail testify at trial that he used a battery-powered saw to cut down a door 18 feet from one of the microphones. He then kicked at the door, at which point it fell onto the concrete floor, Dunford said, recalling the testimony. The microphone was never activated, he said.
+
+    There were also signals three weeks before the fire that there was trouble with the system. Dunford said testimony showed there were 11 different times in which Sonitrol received warnings from the Core-Mark security system in November 2002, with messages like "failed mic," "audio sensor trouble" and "board failure," he said. Dunford said a technician was never sent out."  reported in Law.com
+
+ 
+
+    Anyone who reads the articles in this forum should have some immediate questions about the outcome of this case.  See how many you can come up with before continuing reading..............
+
+    OK, time's up.  This was a contract with a commercial subscriber, so we don't have the considerations that go into a consumer contract.
+
+    1.  Didn't the contract have a jury waiver.  You don't want a jury having to decide if you were grossly negligent or, as in this case, willful and wanton.  It's hard enough for juries to comprehend no negligence from negligence, let alone negligence and gross negligence.  If the jury has to decide if they want to render an award then they will reach whatever decision they have to; in this case, gross negligence.  Your alarm contract should have a jury waiver.  As I recently heard a comedian say, "do I want my case decided by 12 jurers who were too dumb to get out of jury duty?"
+
+    2.  Where was the waiver of subrogation clause?  This is perhaps the most potent provision in the alarm contract because, as in this case, most cases against alarm companies are brought by insurance companies [incredibly some of the same insurance companies who write alarm errors and omission insurance].  A waiver of subrogation clause will put a stop to the case, but of course the defense attorneys need to raise the clause as a defense.  I could not imagine that the Sonitrol contract didn't have a waiver of subrogation.  Well guess what?  The contract is so poorly written that its hard to tell.  The contract has this provision:
+
+    "Client hereby waives his right of recovery against Dealer for any loss covered by insurance on the premises or its contents to the extent permitted by any policy or by law."
+
+    What the heck does that mean?  Does it sound like "Subscriber hereby waives any right of subrogation any insurance carrier may have against alarm company?"
+
+    How hard was that to say?  In all fairness, the contract involved in this litigation was from 1995, so maybe it now uses better contracts - though Sonitrol doesn't require it's dealers use my Standard Form Contracts - not yet anyway. 
+
+    3.  If you're in a state that will not enforce the exculpatory or limitation of liability clauses if gross negligence is found then those clauses won't be of much help.  You will need to focus your defense on establishing that the allegations and the proof do not raise to the level of gross negligence.  That might not be easy, especially if you are in front of a jury. 
+
+    To answer the question raised in the title of this article, your company cannot cover a 10 million dollar loss, and you most likely do not have insurance protection with that kind of coverage.

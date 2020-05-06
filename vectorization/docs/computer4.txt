@@ -1,0 +1,214 @@
+A cat wearing a short tie plays music on a cat-shaped keyboard ("Pancake Meowsic Video," 185,459 views). A woman performs sun salutations with a cat on her back ("Cat Loves Yoga," 1,539 views). A man slaps two cats on an ironing board to the beat of "Atmosphere" ("Cat Slap Joy Division," 357,605 views; watch this one). (Now, I mean.) Kittens try to keep up with an accelerating treadmill ("Treadmill Kittens," 3.4 million views). A fat cat walks on an underwater treadmill ("Fat Cat Walking on Underwater Treadmill," 133,434 views). Two cats cuff at a treadmill in perplexed inquisition ("Cats Try to Understand Treadmill," 1.9 million views). Search YouTube for "cat treadmill" and see how many results there are. Or, actually, don't.
+
+Writing that paragraph took more than an hour. To continue the catalog for a page would've taken weeks. But if one has set out to say something definitive about the relationship between cats and the Internet, it's important not to be delayed indefinitely by Internet cats.
+
+The obvious place to begin an inquiry into the Internet cat is with Maru, the most famous feline on the Internet. Maru's shtick, in brief: Maru gets into a box ("大きな箱とねこ," 8.1 million views). Maru gets into a box ("箱とねこ８. A box and Maru 8," 3.1 million views). Maru gets into some boxes ("いろいろな小さ過ぎる箱とねこ. Many too small boxes and Maru," 7.9 million views). Maru tries to get into a box ("入れない箱とねこ. The box which Maru can't enter," 2.2 million views).
+
+Maru, which means "circle" or "perfection" in Japanese, is a Scottish fold with nonfolded ears. He is 5 years old and lives in an undisclosed Japanese city that is, by consensual rumor, almost certainly not Tokyo, because no indoor cat in Tokyo has that much space to jump into boxes, especially not the bigger ones. Maru has upwards of 168 million YouTube views and, according to other rumors, has generated enough ad revenue to buy his owner a new apartment. His is the seventh-most-subscribed YouTube channel in Japan.
+But Maru is just one of Japan's famous Internet cats, and his reign will not last forever. Japan is also home to child-tortured Mao; to Shironeko (aka Basket Cat aka White Basket Cat aka Zen Cat), the cat who serenely closes his eyes no matter what is stacked atop his head; to Cute Overload's beloved Persian, Winston-san, who sometimes appears propped on pillows before plates of untouched gyoza; to the enormous Papi-chan, a Norwegian forest cat of considerable bulk and endurer of the Internet's first extensively featured cat diet.
+
+There's also the famous flying-Pop-Tart cat, of course, Nyan Cat; his tie to Japan remains obscure unless you've been made aware, by someone who knows something about Japan and cats, that nya is how Japanese cats say "meow." Some of Japan's most interesting cat activity originally appeared on TV, but by the time we've been exposed to the game show that turns cats into weight lifters by putting increasingly heavy fish onto scales, or the variety show in which a phalanx of kittens is invited to nest in a patch of cooking pots (a fad called neko-nabe), we're seeing them on the Internet, posting them to Facebook, emailing the links to our moms and yoga teachers.
+
+The Internet's preference for cats runs so deep that when Google's secretive X Lab showed a string of 10 million YouTube images to a neural network of 16,000 computer processors for machine learning, the first thing the network did was invent the concept of a cat. America might have inflated the Internet-feline bubble—the Cheezburger Network raised $30 million last year in venture funding, and the Bible has been translated into Lolcat—but Japan was where the Internet-feline market began, and persists, as a quiet, domestic cattage industry. If you want to know why the Internet chose cats, you must go to Japan.
+
+Lest I unfairly ratchet up your collective expectations: I will never get to pet Maru, and neither will you. Maru's supervisory documentarian is named Mugumogu, but beyond that fact, hardly anything is known about her. When I write Maru's US book publicist—you read that right—it turns out that she knows no more than you or I. The publicist loops in Maru's US book editor, who offers to pass along some interview questions to Mugumogu's Japanese agent, who could have them translated, answered, and sent back. But I have no questions for the human being called Mugumogu. My interest lies entirely with the cat. I write back to the US editor in my most professional tone, the one in which I don't sound like somebody who watches cat videos all day, and say that for my purposes I need to meet Maru IRL. I am willing to sign an IRL NDA. I promise I won't write a word about Mugumogu herself. I just want 20 or 30 minutes with that cat.
+
+A few days later the publicist writes back: Impossible. I'm welcome to write to the Japanese agent, she says, but I should know that not even the agent knows who Mugumogu is; her correspondence all goes through Maru's Japanese publisher, a certain Okumura-san, of Tokimeki Publishing, a boutique outfit specializing in Internet cat nya-alls and coffee table celebrations of Korean soap operas. I commence months of fruitlessly obsequious email courtship with Mugumogu but ultimately to no avail.
+
+All of this reticence is infuriating. In America people post a video of themselves whistling "Free Bird" in a tutu and they're heartbroken if they're not immediately invited on The View. It's different in Japan, though. There, they haven't yet cottoned to the idea that the whole point of the Internet is not only that it might make you famous and universally loved but that it might make you famous and universally loved overnight, and for no real reason, and that then it would give you fairly precise metrics for just how famous and loved you were, and for how long. For the Japanese, the Internet is primarily not about self-promotion and exposure but about restraint and anonymity.
+
+To help me understand this introversion—and also in the hope of making contact with some famous Internet cats—I enlist the assistance of David Marx. An American living in Tokyo, Marx writes a very intelligent, popular blog called Néojaponisme, which I'd stumbled upon in my cat-related forays. In a particularly interesting post, Marx offers three reasons for the Japanese cult of online anonymity. The first, which he deems silly, is the fear that criminals or con men might use personal information to harm an unwary Internet user. The second one, the fear that colleagues or bosses might discover personal details that could be problematic at work, he connects to the Japanese cultural milieu, where "any sort of questionable hobby automatically qualifies as a 'secret double life.'" The third reason—fear that anonymous mobs might bash anyone who tried to stand out too aggressively online—he considers totally legitimate, "in that the Internet in Japan so far has been almost exclusively about anonymous mobs making trouble for individuals and industry." (He notes that he once had his own photo posted on a Japanese board called Suspicious Foreigners.) I write Marx a fan email and ask if his theories might apply to the question of why the Internet chose cats. He replies right away. Not only has he written about Japanese media trends, he works at YouTube. We Skype.
+
+"Japan was relatively late to getting on the Internet," he says, "and still lags behind in some ways. But with cat stuff they were always leaders—with cats as their conduits. Think about it." I think about it. I've been doing very little but think about it. "Most of the named cats on the Internet are Japanese," he observes. It's an excellent point: Those cats on treadmills and cats on yoga mats and cats being slapped to a Joy Division soundtrack, anonymous grimalkins all. But your Marus, your Maos, and your Shironekos—all of them are in Japan.
+
+Marx's interest in cats lies in his work with the YouTube Partner Program, or YPP, a service that makes it possible to turn on ads to monetize your content, as the phrase has it. The deal is that the content has to be your own; you can't just post G'n'R songs and then rake in ad money to pay for your brownstone renovation. Either you're invited by the YouTube people because of your pageviews or you can opt in. Once you've joined, they help you with your marketing. They take you through the ad options (banners versus prerolls, etc.) and provide tools and tips for making successful videos. They've got representatives assigned to aid certain classes of partners with the marketing of their monetized videos: some who work with comedians, some who work with musicians, and quite a few who work with cats. Marx says he'll email several new star cats, up-and-coming cats, and see what he can do. He says that a few years ago the cat people tended to be as reclusive as Mugumogu, but that the newer cat folks seem more amenable to revealing themselves.
+
+A few days later, he emails me back: Sure enough, he has some famous cats willing to meet. I fly to Japan to meet the Musashis.
+
+ouTube has told me that Hideo Saito and Manaho Mori—the custodians, managers, promoters, and chief can openers of the Musashis, once one of the most important cat bands on the Internet—would be delighted for me to visit them and interview their cats, but that it would be best if I brought along a translator. My friend Rebecca, who loves cats but lives in a Tokyo apartment building that does not allow pets, is happy to oblige. She is not, however, without concern.
+
+"These people have five cats," she says. "And those cats are in a band, and they are best known for a Christmas song, and they live in a remote resort town at the top of a mountain, and they have invited you, a foreigner, to come to their home to meet their famous Internet cats. I promise you they are going to be weird people." She asks me how many homes I think she's been in, in her 10 years on and off in Japan. I can't begin to guess. She holds up one hand; she can count the number on it.
+
+Hideo, as it turns out, speaks about his cats in calm, measured, elegant English. (He spent some of his childhood in England and the US.) "I started writing songs for cats because I'd gotten bored writing songs for humans. But the thing is, cats have limited vocal ... limited vocal—"
+
+"Limited vocal range?" Rebecca suggests.
+
+"Yes, limited vocal range. I found I needed five cats to cover one octave." We are sitting around an oblong dining room table in the sun-drenched cedar den of a ski chalet in a central Nagano prefecture, along with six cats spanning a spectrum of liveliness that runs from contemptuously drowsy to asleep. Manaho, Hideo's wife and business partner, holds one on her lap, face out and totally blasè9 as it regards us. Hideo is trained as a musician and sound engineer and looks the part, with variable-tint eyeglass lenses (the panels now shaded graphite from the ambient snow glare), a retiring studio voice, a scruffy suggestion of goatee, and a relaxed-bemused '70s mien. Manaho describes herself as a voice coach and producer.
+
+"So I made the Christmas song. I took voice samples from the cats. I had to bribe them with food. They're a quiet breed, these cats. They don't make much noise."
+
+Four of the cats are Norwegian forest cats. They're huge, lustrous, woolly, like a sheepdog made into a pillow. Their coats have a glossy weft of lunar rainbow. According to a thinly sourced but entirely plausible Wikipedia squib, Norse legends refer to a skogkatt, a "mountain-dwelling fairy cat with an ability to climb sheer rock faces that other cats could not manage." That's apparently this cat's pedigree; he is directly descended from myth. On the way up into the mountains, before I lost data service on my phone, Manaho friended me on Facebook, then sent me a photograph of Musashi hovering over snow. Rebecca worried I was bringing her to meet a bobcat. Hideo and Manaho's teenage son, who is about to leave Japan to study animals at a university in Tasmania, hands me Musashi after I sit down. He holds Musashi out to me like a muff of fraying fog. Musashi makes no noise; he is sandbag-limp. The cat is 8 years old and weighs almost 20 pounds, his fur the ur-slate of celestial cinder. My chair bends back beneath his heft. He goes back to sleep as soon as the fuss of brief stir is complete, clucking and grumbling in his resumed dreams. He is the biggest cat I've ever seen. I hold him to me. I love him.
+Panda Kanno
+
+Neither Hideo nor Manaho were cat people, originally. She grew up in Tokyo with four large dogs. He lived abroad and had no pets. The first cats that adopted them were two strays, Ginny (now deceased) and Seri. But everything changed when they took in another stray, badly injured, called Marble, a black cat marbled with rust. He, they discovered, had a voice suitable for sampling.
+
+More on the
+Cat-Industrial Complex ————————————
+
+    IRL Cat-GIF Storyz!
+    Pay to Play: Dispatches From the Cat Cafés of Tokyo
+
+Now they became cat people. They went to a breeder of Norwegian forest cats and bought a kitten called Luka, the only cat they paid for. Needless to say, after a little while Hideo and Manaho wanted more Norwegian forest cats, so they went back to the breeder and asked if they could borrow his stud Norwegian forest cat. He said yes, in exchange for a kitten. The stud cat came to live with them for some number of months—Manaho says two, Hideo says three or four—and Luka gave birth to four kittens. They kept two of them, Musashi and Leo. When Marble died (on the same day as Michael Jackson), the breeder gave them a fourth Norwegian forest cat, Kai. For free. Hideo named the band the Musashis, in honor of its telegenic frontcat.
+
+It was Christmastime then, so Hideo mixed a Christmas song—specifically "Jingle Bells"—out of meow samples and put it on YouTube. The music industry in Japan, like the music industry everywhere and every industry in Japan, has been depressed, and he thought that it might do something to help him introduce himself to new markets.
+
+This was in 2007, soon after YouTube Japan got going. Before that, the Japanese had access to the regular YouTube, but now they had their own native version. The staff from YouTube Japan noticed the Christmas song video, called them up, and said, "We want to put your video on our homepage as we introduce ourselves." They were going to have seven featured videos, a new one each day of their launch week.
+
+In that week, the Musahis got 275,000 views. That was more than expected. But it wasn't until a few weeks later that there was, in Hideo's words, "the big explosion." Manaho had set their YouTube account so she would receive an email alert on her mobile phone when someone left a comment. One day she got 4,000 alerts. She thought her phone was broken, so she called her telecom provider. There was no problem: She had just gotten 4,000 emails, was all.
+
+The problem, as it turned out, was that their 275,000 views on YouTube Japan had brought the Musahis to the attention of the YouTube people in California, who put them on the global home page. The email alerts arrived in German, Hindi, Chinese, unrecognizable languages. Manaho turned off her email-alert function. Within a few days they'd gotten well over a million views.
+
+That's when the Korean TV station got in touch. It came down to Japan with a film crew and shot the Musashis at home. Soon after, Hideo and Manaho heard from NHK, the national broadcasting corporation of Japan. The people from NHK were surprised that no other Japanese networks had covered them yet, so they sent a crew to shoot them for a popular Sunday-evening program called @Human, which introduces a wide TV audience at home to the sorts of interesting things happening at the moment on the Internet. Manaho brings up a blog entry with a TV still of Musashi next to a cookie that has "NHK" printed on it.
+
+The economics of a viral Japanese cat can be nontrivial, as David Marx explains to me over a lunch debrief at Google's offices, on the 27th floor of a Roppongi high-rise. Marx is unusually tall for an American and thus almost impolitely tall in Japan. He's not only tall but he tapers, an effect accentuated by the wide float of his rolled pant cuffs over narrow ankles. His black hair is prematurely frosted; it crowns a voluble fanboyish enthusiasm, giving his whole appearance the sense of an artful parody of distinction.
+
+He takes me back to his office, where there is a conference room with whiteboards for walls. He warns me that he's unable to comment on or speculate about individual YouTube partners, but we can talk generally about cats. He can't tell me exactly how many Japanese cat partners there are, but he nods when I ask if it's more than a hundred. "There are cats," he says, "that are making more money than the average salary in Japan"—which the Internet estimates to be around $29,000. Most of the partners, the active second-tier ones, are probably making much less, though a good deal of them are earning enough to put a dent in their mortgages.
+
+Marx and I watch a few new cat videos, some of the up-and-comers, those challenging or exceeding Maru's pageviews. "An interesting thing, here in Japan, is that it's not just the cat partners who post cat stuff. It's everybody." Soezimax, for example, is an action-film maker, one of the most popular partners in Japan, with millions of views. But some of his most popular videos are the ones he posts of the fights he has with his girlfriend's vicious cat, Sashimi-san, who regularly puts Soezimax to rout. He's the anti-Maru, the standard-bearer of uncute Internet cat aggression. The videos are slightly alarming, especially when we're all so used to anodyne felinity. Then Marx brings up Japan's most popular Internet comedian, who used to post regular videos of himself in a cat café. (In Japan, they have cafés where you go to pet cats.)
+
+"It's like," Marx says, "no matter how successful you are here on the Internet on your own terms, it's de rigueur that you still have to do something with a cat." In a culture of Internet anonymity, bred of island claustrophobia and immobility, the Japanese Internet cat has become a crucial proxy: People who feel inhibited to do what they want online are expressing themselves, cagily, via the animal that only ever does what it wants.
+Panda Kanno
+
+After their Christmas song went viral, the Musashis were signed by an outfit called Stardust Promotion. "They didn't sign us, they signed them," Hideo says. He means the cats.
+
+Rebecca and I laugh.
+
+Hideo doesn't laugh. "No," he says. "They paid in fish."
+
+I look to Rebecca for a cue about how Japanese etiquette might encourage us to react here. She looks at me defenselessly.
+
+Hideo says, "They presented Musashi with a whole fish. Musashi put his paw print on the contract." They laugh now, so we do too. Manaho returns to one of the two laptops on the table, browses her blog, and turns the screen back toward us to show a video.
+
+In it, two men come around the back of an unmarked minivan, open the double doors, and gingerly lift a silver fish on a stretcher.
+
+Hideo narrates. "Those are the Stardust guys, getting the fish." They bring it inside. "They brought it inside." Musashi sits propped against the couch like the sultan of Brunei.
+
+"That's Musashi," Hideo says, as if there is any other known cat that takes up a third of a couch, and as if he isn't still sleeping in my lap. The men present Musashi with the fish. Musashi remains expressionless; whatever avarice the cat was feeling remained concealed behind his aldermanic composure. They zoom in. Musashi doesn't flinch. He doesn't notice.
+
+"He's thinking about it," Hideo says. "Now he agrees." Musashi puts his red paw print on the contract, then scuds off, blotting the couch with his cerise paw.
+
+Hideo closes the laptop. "The whole thing is a joke," he explains.
+
+"But that was a real fish," I say. He nods.
+
+"Did they eat the fish?" I ask.
+
+The son speaks up, rousing himself for the first time from the lidded pretend funk of filial humiliation. "No! We ate the fish."
+
+"You ate the fish?" Rebecca is incredulous. After all, Hideo made such a big deal about how the cats were signed by Stardust, not them.
+
+Hideo seems a little sheepish. "The cats didn't even know what it was! They'd never even seen a whole fish before. They didn't recognize it. So we ate it."
+
+"It was good," their son says.
+
+"Was there an agreement about royalties?" Rebecca asks.
+
+"They wanted us to make video content for mobile phones," Hideo says.
+
+"Can we see the mobile phone content?" I ask.
+
+"I burned you a DVD," he says. He reopens his laptop and plays a video of the Musashis singing "Auld Lang Syne." The chopped mews sting sharply, like slashes from an 8-bit-videogame sword, and Marble rings in with a hoarse bark that, knowing what we know now about his and Michael Jackson's coincident deaths, is hard not to read as the kind of netherworldly incursion that used to get cats set ritualistically on fire. Musashi wears big, chunky studio headphones, which he subsequently throws off in a diva tantrum. All five Musashis at one point groom themselves while floating in the dim amniotic aura of pink orbs. They bleat the 18th-century tune in short squawks; it's hard to reconcile the sounds with the majestically unrousable beasts loafing all around.
+
+I ask Hideo about his one original composition for the cats, which he hasn't played for us.
+
+"Oh, that," he says. "They wanted to use that as the theme song for a TV show." This smacks of Stardust Promotion. "The show was on in the summer of 2008." Rebecca asks what it was called.
+
+"It was a family drama, and it was called ..." Hideo thinks for a moment. "Daisuki! Itsutsugo." Daisuki means "I like it a lot!" or "I like you a lot!" or, because the Japanese don't really have a way to say it, "I love you!" The show was about quintuplets (itsutsugo) and the problems they face and then overcome.
+
+The show's producers wanted to use Hideo's original composition for the show's theme song, but the problem was that they needed lyrics. "But I told them, the cats don't sing lyrics, they sing instrumental! So then they went and got the girls' group." The girls' group was called P-A, for Pawa-Aiji, or Power Age. "They asked us to take the girls and the cats and make a song and a video."
+
+"What happened to P-A?" Rebecca asks.
+
+"They already disappeared, naturally," Hideo's son says.
+
+"But they were popular back then?"
+
+"Uh, no," Hideo says. "They wanted to make the girls popular. By using the cats, because the cats were already popular. So I said OK. But it didn't work. The girls did not get popular. Still, the cats were the very first species besides humans to sing the theme song for a network TV show."
+
+We watch the video of five unpopular girls and five popular cats sing the theme song to a family drama about troubled quintuplets. It begins with scrolling *Star Wars-*style lettering announcing the publication of the Musashis' first book. Then Leo and Luka bubble-chat as a UFO flies overhead. The cats appear backlit and powerful, then lift their paws out of a huddle. Each walks through the ether toward the camera. I refuse to continue describing this video. It is on the Internet.
+
+An interlude: three Tokyo cat cafés, briefly reviewed.
+
+Cateriam, Shimokitazawa: immaculate, homey, very gemütlich, with 9 to 11 above-average to excellent cats, including a docile rag doll good for holding and a lively Persian that yowls when won over. Cat books and manga for perusal line the walls, and the owner has thoughtfully hung branches from the ceiling for good overhead cat action. Cats may remain less than enthusiastic until engaged by an informative onsite shill/fluffer. Serves delicious green tea lattes and will gladly replace the ones that cats drink out of. Wireless Internet. 9/10.
+
+Nekobukuro, Ikebukuro: Inexpensively priced, with unlimited cat time, but the nitrogenous tang of egesta will prevent anybody but the hardiest cat lover from lingering. The cats are large and plentiful, with at least 25 on the premises; highlights are a colorpoint Himalayan named Hiyawari and a Norwegian forest cat behind glass. Often feels like an Ambien party for cats, though some apparently tweet. Present are various autoerotic machines, including one that allows cats to bunt against spiked rubber massagers. Ikebukuro locals vastly prefer the mom-and-pop cat cafè9 around the corner, Nekorobi, but time constraints prevented this reviewer from visiting. 4/10.
+
+Neko Café Club, Jiyugaoka: This former nail salon entertains upwardly mobile yoga moms with kittens, including the Internet's beloved munchkin and Scottish fold varieties. No postcards or DVDs, unfortunately, and the large picture windows to the street make you feel as if you're on the Internet. The cats are extremely high-quality, though they may be drugged. Private rooms available. 7/10.
+
+So what, then, is it about cats? Internet pundits have drafted back-of-the-envelope theories. "The Internet is a dog park for cat people" is one line that gained online currency. Sounds good, but it doesn't hold up: The Internet's cat obsession goes well beyond so-called cat people. Plenty of those who'd never think of owning a cat are pleased to watch them on the Internet's treadmills.
+
+Time magazine put forward the proposition that "there's something about watching a normally proud animal thrust into a humiliating situation that's especially funny." This is barely worth rebutting, as even the worst cat retains its dignity no matter the circumstances. The cat is the Thing That Will Not Be Humiliated.
+
+The same Time piece then ended by taking Internet cats not seriously but simply srsly. "Or maybe we're over-thinking it. 'Cat videos are just cute,' says [Nyan Cat creator Christopher] Torres. Indeed." Except not indeed. Not even remotely indeed. Baby hedgehogs are also cute, arguably cuter, but they do not compete with porn for Internet real estate. One thing competes with porn, and that is cats.
+
+In the course of my research, by which I mostly mean desultorily clicking on links in my friends' Gchat away-statuses, I came across two seemingly unrelated but profoundly complementary recent scientific studies. The first, conducted by computer scientists and a psychologist at Missouri University of Science and Technology, took up the link between the Internet and depression. The people at MST had a few major findings that correlated patterns of heavy Internet usage, with some apparent statistical significance, to symptoms of depression. The first was the presence of P2P packets, an indicator of file-sharing—music and movies. The second was frequent email checking. A third example was increased "flow duration entropy," a result of rapid switching between applications, and to that the authors of the study added increased video watching, gaming, and chatting. Their examples of depressive Internet activity overlapped nearly perfectly with most people's idea of Internet usage. They didn't break out the video-watching by genre, but one can only suspect that a lot of those depressive Internet users were watching cat videos.
+
+Meanwhile, around the time of the depression study, someone in the cat group I'm in on Facebook—no explanation necessary—posted a write-up of a study conducted by some cat scientists at the University of Vienna on the relationship between cats and neurotics. The dryness of the study's title ("Factors Influencing the Temporal Patterns of Dyadic Behaviours and Interactions Between Domestic Cats and Their Owners") belied the most exciting ethology of cat ownership since D. C. Turner's seminal 1991 paper in the august journal Schweiz Arch Tierheilkd. The authors cite Turner's towering influence: "Turner (1991)," wrote Wedl, Bauer, et al., found that "the higher the proportion of all successful intents to interact [with the cat] that were due to the cat, the longer was the duration of interactions."
+
+In other words, your cat will like you best if you pretend that you don't desperately want to play with it all the time. What the current group of researchers seemed to suggest was equally fascinating: The more neurotic the cat owner—the more desperate for fuzzy comfort and nuzzly security and unconditional affection—the briefer the interactions that damn cat would allow.
+
+So we have a reputable study correlating Internet usage and depression. We have another reputable study correlating neuroticism and being ignored by cats. We are only one step away from the grand synthesis that has thus far eluded the ever-growing community of Internet-cat researchers.
+
+This all comes together for me at that first cat café. I guess I feel about it what one might theoretically feel about an orgy, or that old chestnut about the '60s: if you were keeping good notes, or if the memory is much more than a lot of velutinous petting alongside irascible demands for submaxillary attention, you probably weren't making the most of it.
+
+It's on the second floor of a nondescript building in Shimokitazawa, and the walls are papered with information about the cats' Twitter feeds. The setup is this: You walk in, pay 1,000 yen, or about $12, for an hour (which includes one drink), take off your shoes, go up a step and through a gate, sit down, pick up a toy, and wait for the cats, who, needless to say, want absolutely nothing to do with you. I remember a video I watched online, a Time magazine segment on the web about the first cat cafè9, which opened in Osaka in 2004. The initial highlight of the Time piece was this one middle-aged woman who loved cats. She said she came to the cat café, like many people, because her apartment building didn't allow pets. She worked in a factory, and after the feel of cold metal all day she liked to come here and feel warm fur.
+
+The real pathos of the Time segment, though, was a bit toward the end, where it was clear that the women couldn't figure out why some of the cats were being standoffish; they looked like they thought they were doing something wrong. And the needier the women, the more indifferent the cats; they seemed not to understand that this is how a cat works.
+
+Think of it this way: What we do on the Internet is mostly "like" things, and while liking them we wait for our own content to be liked. We check our analytics as we await retweets. This is where the cats come in. A cat will not retrieve some dumb object so that you can throw it yet again. A cat will not do a shtick to be petted on its head. A cat will not jig for a mackerel ingot. That goes against everything cats stand for. Or more often sit. It's not just that cats are unable to be anything but real; it's that cats both know they are performing and couldn't possibly care less about how their performance is received. Their play in front of a camera is exactly like their play absent one.
+
+What an Internet cat does is thus confront us with how cravenly we ourselves court approval. A cat, if it decides to love you, will do so only on its own terms, and, as that Viennese study showed, the more you let it come to you, i.e., the less you need it, the better loved you're going to be. The reason the lolcat says "Oh hai" is because he only just noticed, and certainly doesn't care, that you caught him serenely occupying ur nouns, verbing ur other nouns. He doesn't worry about you or what you think; by his living in your screen, you can love him, but there isn't a prayer of reciprocation. Thus is the Internet cat the realest cat of all.
+
+The late-afternoon light is pink on the snow, and we need to drive out of the mountains before the roads freeze over. But there is one more thing I want to talk about.
+
+"So," I say, "are you guys interested in any, er, other Internet cats?"
+
+"There's Maru," Hideo says right away. "He's very interesting. He likes boxes. Jumping into them."
+
+I say I tried to meet him and was refused. I hope I sound convincingly flat, affectless, unfixated.
+
+Manaho asks where Maru lives. "Nobody knows," I reply.
+
+"Ah so!" Manaho says. She continues in Japanese, and Rebecca translates. "She says they're quite good videos, the way they shoot them. She also says she thinks it's a professional doing them."
+
+It sounds to me as though she meant something weighted by "professional." Later I ask Rebecca if I was right about that, or if it was just her translation. She says she thinks there's something to it: To the resolutely DIY Musashis, the slick high-roller Maru might look like a bit of a sellout. "I mean, Hideo's videos, they're so aggressively amateurish. It looked like he'd just clicked the box for every single effect—highlight, aura, fade, starburst, whatever."
+
+Manaho asks why Maru declined my interview request. I tell her his owner thinks the cat is the way he is—uncorrupted by fame, unselfconscious in his performance—because she keeps him quarantined. If he met outsiders, she worries, he wouldn't be the same anymore. He might get anxious.
+
+Manaho nods. "Usually when cats encounter someone new they go and hide, but these cats are different." She points under the table, where her cats are sitting and sleeping. "Because of their personality, we thought they would be OK with the media. It didn't stress them out." It didn't even wake them up.
+
+"It was all a crazy period," Manaho says.
+
+"Did it change your life at all?" I ask.
+
+"Not at all," Hideo says. "We weren't the crazy mom and dad."
+
+"So are you still writing songs for the cats?"
+
+"Not recently," Hideo says.
+
+Manaho breaks in, and Rebecca translates: "Of all the experience they have working with all the other artists—and she just named some pop stars even I've heard of—she says they can say that the cats are by far the most difficult. It really takes a lot of time. They don't follow instructions. They don't know where or when to meow. They won't stand in front of the microphone. So the microphone needs to stand in front of the cats." She makes a motion that is halfway between the operation of a boom mic and a lacrosse pass.
+
+His cat-music career having foundered on the superciliousness and indifference of his imperious cats, Hideo tells me what he's up to now. "I'm working on a charity song. After the earthquake and tsunami happened, there were so many pages on Facebook that people made to send their good wishes or money to Japan, but most of the comments on the Facebook pages were in English. I went to all the different pages for Japan and wrote that the people of Japan were grateful for their thoughts and prayers. I became friends with many more people on Facebook, from all over the world."
+
+He found an Internet that was accountable and kind, not anonymous and mean-spirited. "I wanted to share all of this with Japanese people, so I asked my friends on Facebook in all these countries if they would sing for me. I made a huge chorus of many voices that I'm still working on. I get to collaborate with all these people I've never met and never had conversations with but we can still make work together. Maybe you will sing for me?"
+
+"I don't think you want me singing for you."
+
+"But maybe you will write about this, and more people will find me and collaborate with me." His name is Hideo Saito, and he is on Facebook.
+
+The cedar shadows have grown narrow in the snow outside, and the cats snore and mutter in their dreams. We take pictures until we are all too sore to keep holding Musashi aloft. We all bow at each other. Rebecca and I bow at the cats. The cats drift off.
+
+On the long drive home, Fuji hovering before us, solitary and immanent in cloudy magenta, Rebecca and I talk about how terrible we feel that we expected these Internet cat video people to be out of their minds. They are just normal people who have some special cats to share with the world and have gotten something back. I picture-message Micah, my brother, an image of Musashi obscuring my lap.
+
+"That's not a cat," he texts back. "That's a lion."
+
+"It's a Norwegian forest cat."
+
+"Norwegian forests must be terrifying."
+
+"No, it wasn't terrifying. It was really nice, and sleepy. If you want to see him sing, search YouTube for 'だいすき! !P-A Musashi's.'"
+
+It takes him a few minutes to respond.
+
+"Dude what the fuck."
