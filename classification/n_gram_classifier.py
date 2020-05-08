@@ -57,41 +57,45 @@ def get_score(_pretrainded_models, _current_model, n=3):
     return _result
 
 
-languages = ['rus', 'blr', 'ukr']
-# pretrainded_models = train_models(languages)
-pretrainded_models = read_models(languages, 500)
+def main():
+    languages = ['rus', 'blr', 'ukr']
+    # pretrainded_models = train_models(languages)
+    pretrainded_models = read_models(languages, 500)
 
-df = pd.DataFrame(np.zeros([len(languages), len(languages)]),
-                  index=languages,
-                  columns=languages)
-y = pd.read_csv('docs/y.csv').set_index('name')
+    df = pd.DataFrame(np.zeros([len(languages), len(languages)]),
+                      index=languages,
+                      columns=languages)
+    labels = pd.read_csv('docs/y.csv').set_index('name')
 
-print('Count text dataframe: \n{}'.format(y.loc[:, 'language'].value_counts()))
-for i in range(1, 12):
-    with open('docs/text{}.txt'.format(i), encoding='utf-8') as f:
-        text = f.read().rstrip()
-    current_model = tk.get_word_ngrams(text)
-    current_model_frequency = get_ngram_frequency(current_model)
-    score = get_score(pretrainded_models, current_model_frequency)
-    predicted_language = [k for k in score if score[k] == max(score.values())][0]
-    actual_language = y.loc['text{}.txt'.format(i), 'language']
-    print('Predicted: text{} in {} language'.format(i, predicted_language))
-    print('Predicted score: {}'.format(score))
-    print('Actual: text{} in {} language'.format(i, actual_language))
-    if predicted_language is actual_language:
-        df.loc[predicted_language][predicted_language] += 1
-    else:
-        df.loc[predicted_language][actual_language] += 1
-print('Resulted dataframe: \n{}'.format(df))
-with np.errstate(divide='ignore'):
-    for language in languages:
-        recall = df.loc[language][language] / sum(df[language])
-        precision = df.loc[language][language] / sum(df.loc[language])
-        f1_score = 2 * precision * recall / (precision + recall)
-        print('Recall {}-class: {}'.format(language, recall))
-        print('Precision {}-class: {}'.format(language, precision))
-        print('F1-score {}-class: {}'.format(language, precision))
-    true_positive = sum(np.diag(df))
-    total_without_true_positive = df.mask(np.eye(3, dtype=bool)).fillna(0.0).values.sum()
-    accuracy = true_positive / (total_without_true_positive + true_positive)
-    print('Accuracy: {}'.format(accuracy))
+    print('Count text dataframe: \n{}'.format(labels.loc[:, 'language'].value_counts()))
+    for i in range(1, 12):
+        with open('docs/text{}.txt'.format(i), encoding='utf-8') as f:
+            text = f.read().rstrip()
+        current_model = tk.get_word_ngrams(text)
+        current_model_frequency = get_ngram_frequency(current_model)
+        score = get_score(pretrainded_models, current_model_frequency)
+        predicted_language = [k for k in score if score[k] == max(score.values())][0]
+        actual_language = labels.loc['text{}.txt'.format(i), 'language']
+        print('Predicted: text{} in {} language'.format(i, predicted_language))
+        print('Predicted score: {}'.format(score))
+        print('Actual: text{} in {} language'.format(i, actual_language))
+        if predicted_language is actual_language:
+            df.loc[predicted_language][predicted_language] += 1
+        else:
+            df.loc[predicted_language][actual_language] += 1
+    print('Resulted dataframe: \n{}'.format(df))
+    with np.errstate(divide='ignore'):
+        for language in languages:
+            recall = df.loc[language][language] / sum(df[language])
+            precision = df.loc[language][language] / sum(df.loc[language])
+            f1_score = 2 * precision * recall / (precision + recall)
+            print('Recall {}-class: {}'.format(language, recall))
+            print('Precision {}-class: {}'.format(language, precision))
+            print('F1-score {}-class: {}'.format(language, f1_score))
+        true_positive = sum(np.diag(df))
+        total_without_true_positive = df.mask(np.eye(3, dtype=bool)).fillna(0.0).values.sum()
+        accuracy = true_positive / (total_without_true_positive + true_positive)
+        print('Accuracy: {}'.format(accuracy))
+
+
+# main()

@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
 from matplotlib.pyplot import figure
-from scipy.cluster.hierarchy import linkage, dendrogram
+from scipy.cluster.hierarchy import linkage
 
 import text_mining.tf_idf.lemmatizer as lm
 import text_mining.helpers.helpers as hp
@@ -105,8 +105,8 @@ def compare_word(_ppmi_df, w1, w2):
     print('Kullback-Leibler: {}'.format(kullback_leibler))
     jensen_shannon = wm._get_jensen_shannon_divergence(_ppmi_df[w1], _ppmi_df[w2], positive=True)
     print('Jensen-Shannon: {}'.format(jensen_shannon))
-    result = {'wordsim353': wordsim.iloc[0]['Human (Mean)'], 'cosine': cosine, 'jaccard': jaccard, 'kullback_leibler': kullback_leibler,
-              'jensen_shannon': jensen_shannon}
+    result = {'wordsim353': wordsim.iloc[0]['Human (Mean)'], 'cosine': cosine, 'jaccard': jaccard,
+              'kullback_leibler': kullback_leibler, 'jensen_shannon': jensen_shannon}
     return result
 
 
@@ -125,7 +125,6 @@ def main():
     dict_files = {('bank', 'money'): 9, ('book', 'paper'): 8, ('coffee', 'cup'): 8, ('computer', 'internet'): 8,
                   ('doctor', 'nurse'): 8, ('dollar', 'loss'): 8, ('football', 'soccer'): 8, ('phone', 'cell'): 8,
                   ('software', 'computer'): 8, ('tiger', 'cat'): 11}
-    #dict_files = {('tiger', 'cat'): 11}
     result = []
     for group_names, count in dict_files.items():
         first_word, second_word = group_names
