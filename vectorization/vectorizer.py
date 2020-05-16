@@ -1,3 +1,4 @@
+import gensim as gensim
 import numpy as np
 import pandas
 import pandas as pd
@@ -111,14 +112,14 @@ def draw(_wordsim_pairs, _ppmi_df, _word_context_df, _word_set):
     _draw_matrix_heatmap(_word_context_df, _word_set)
 
 
-def compare_word(_df, _w1, _w2, base=False, word2vec=False):
+def compare_word(_df, _w1, _w2, _method, base=False, w2v=False):
     if base:
         _w1_df, _w2_df = _df[_w1], _df[_w2]
-    elif word2vec:
-        pass
+    elif w2v:
+        _w1_df, _w2_df = _df.wv[_w1], _df.wv[_w2]
     else:
         _w1_df, _w2_df = _df.loc[:, _w1], _df.loc[:, _w2]
-
+    print(_method)
     wordsim353 = pandas.read_csv('docs/wordsim353.csv')
     wordsim353['Human (Mean)'] = normalize_series(wordsim353['Human (Mean)'])
     print('{} - {}'.format(_w1, _w2))
@@ -132,7 +133,7 @@ def compare_word(_df, _w1, _w2, base=False, word2vec=False):
     kullback_leibler = wm.get_kullback_leibler_divergence(_w1_df, _w2_df, positive=False)
     print('Kullback-Leibler: {}'.format(kullback_leibler))
     jensen_shannon = wm.get_jensen_shannon_divergence(_w1_df, _w2_df, positive=True)
-    print('Jensen-Shannon: {}'.format(jensen_shannon))
+    print('Jensen-Shannon: {}\n'.format(jensen_shannon))
     result = {'wordsim353': wordsim.iloc[0]['Human (Mean)'], 'cosine': cosine, 'jaccard': jaccard,
               'kullback_leibler': kullback_leibler, 'jensen_shannon': jensen_shannon}
     return result
@@ -200,6 +201,12 @@ def plsa(_corpus, _word_set, _document_set, number_of_topics=5, max_iterations=1
     return topic_word_probability
 
 
+def word2vec(_corpus):
+    sentences = [[j for i in [sentence for sentence in k] for j in i] for k in _corpus]
+    model = gensim.models.Word2Vec(sentences, min_count=0)
+    return model
+
+
 def show(_result, _method):
     wordsim_values, cosine_values, jaccard_values, kullback_leibler_values, jensen_shannon_values = [], [], [], [], []
     for dict_item in _result:
@@ -230,18 +237,20 @@ def main():
         word_set = _get_word_set(corpus)
         document_set = _get_document_set(corpus)
 
-        result_plsa.append(compare_word(plsa(corpus, word_set, document_set), first_word, second_word))
-
         word_context_df = _get_word_context_matrix(corpus, word_set)
         ppmi_df = _get_pmi(word_context_df)
-        result_base.append(compare_word(ppmi_df, first_word, second_word, base=True))
+        result_base.append(compare_word(ppmi_df, first_word, second_word, 'BASE METHOD', base=True))
+
+        result_plsa.append(compare_word(plsa(corpus, word_set, document_set), first_word, second_word, 'PLSA METHOD'))
+
+        result_word2vec.append(compare_word(word2vec(corpus), first_word, second_word, 'WORD2VEC METHOD', w2v=True))
 
         # wordsim_pairs = [(first_word, second_word)]
         # draw(wordsim_pairs, ppmi_df, word_context_df, word_set)
 
     show(result_base, 'BASE METHOD')
     show(result_plsa, 'PLSA METHOD')
-    # show(result_word2vec, 'WORD2VEC METHOD')
+    show(result_word2vec, 'WORD2VEC METHOD')
 
 
 main()

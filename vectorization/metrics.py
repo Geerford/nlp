@@ -19,8 +19,9 @@ def get_weighted_jaccard_similarity(s, t):
 
 def get_kullback_leibler_divergence(p, q, positive):
     with np.errstate(divide='ignore'):
-        df = p.mul(np.log(p / q), fill_value=0)
+        df = pd.Series(p).mul(np.log(pd.Series(p) / pd.Series(q)))
         df[np.isinf(df)] = 0.0
+        df.fillna(0)
     result = df.sum()
     if result == 0:
         return result
